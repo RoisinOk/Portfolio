@@ -1,6 +1,23 @@
 /**
  * Created by roisinokeeffe on 14/09/2015.
  */
+//var portItem = document.getElementById("portItem");
+//var sizePortItems = portItem.style.width;
+//console.log(sizePortItems);
+
+var windowHeight = window.innerHeight;
+console.log(windowHeight);
+
+var titleDiv =  document.getElementById("titleDiv");
+var aboutDiv =  document.getElementById("aboutDiv");
+var portfolioDiv =  document.getElementById("portfolioDiv");
+var contactDiv =  document.getElementById("contactDiv");
+
+titleDiv.style.height = windowHeight + "px";
+aboutDiv.style.height = (windowHeight-70) + "px";
+contactDiv.style.height = (windowHeight-70) + "px";
+
+
 //================================================================================
 //CODE TO ANIMATE ABOUT ICON
 //================================================================================
@@ -90,17 +107,17 @@ contactIcon.style.display = "block";
 //================================================================================
 
 function drawPortfolioIcon(){
-    TweenMax.to(window, 1, {scrollTo:{y:2515, x:0}, ease:Power4.easeOut});
+    TweenMax.to(window, 1, {scrollTo:{y:1420, x:0}, ease:Power4.easeOut});
     animationPortfolio.play();
 }
 
 function drawContactIcon(){
-    TweenMax.to(window, 1, {scrollTo:{y:3714, x:0}, ease:Power4.easeOut});
+    TweenMax.to(window, 1, {scrollTo:{y:2729, x:0}, ease:Power4.easeOut});
     animationContact.play();
 }
 
 function drawAboutIcon(){
-    TweenMax.to(window, 1, {scrollTo:{y:1325, x:0}, ease:Power4.easeOut});
+    TweenMax.to(window, 1, {scrollTo:{y:683, x:0}, ease:Power4.easeOut});
     animationAbout.play();
 }
 
@@ -113,3 +130,15 @@ function findOutY(){
     console.log(window.scrollY);
 }
 
+
+window.onscroll = function() {onScrollDown()};
+
+function onScrollDown() {
+    if (window.scrollY> 1500) {
+        animationContact.play();
+    }else if (window.scrollY> 700){
+        animationPortfolio.play();
+    } else if (window.scrollY> 200) {
+        animationAbout.play();
+    }
+}
