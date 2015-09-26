@@ -39,6 +39,7 @@ body {
     color: darkcyan;
     font-size: 1.5em;
     text-align: center;
+    font-weight: 400;
 }
 
 
@@ -98,6 +99,7 @@ h3{
     font-family: 'Josefin Slab', serif;
     font-size: 1.5em;
     text-align: center;
+
 }
 
 h4{
