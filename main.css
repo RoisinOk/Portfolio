@@ -190,56 +190,11 @@ color: whitesmoke;
     opacity: .3;
 }
 
-.imgDescription {
-    position: absolute;
-    top: 50px;
-    display: table-cell;
-    text-align: center;
-    /*background: rgba(29, 106, 154, 0.72);*/
-    color: darkcyan;
-    visibility: hidden;
-    opacity: 0;
-
-    /*remove comment if you want a gradual transition between states
-    -webkit-transition: visibility opacity 0.2s;
-    */
-}
-
-.imgWrap:hover .imgDescription {
-    visibility: visible;
-    opacity: 1;
-}
-
-
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
     .col {  margin: 1% 0 1% 0%; }
-    .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+    .span_3_of_3, .span_1_of_2, .span_1_of_3 { width: 100%; }
 }
 
-/*======================================================================*/
-
-/*======================================================================*/
-
-.wrap {
-    /* force the div to properly contain the floated images: */
-    position:relative;
-    /*float:left;*/
-    /*clear:none;*/
-    overflow:hidden;
-}
-.wrap img {
-    position:relative;
-    z-index:1;
-}
-.wrap .desc {
-    display:block;
-    position:absolute;
-    /*width:100%;*/
-    top:30%;
-    left:0;
-    z-index:2;
-    text-align:center;
-}
 
 

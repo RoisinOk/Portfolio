@@ -1,3 +1,5 @@
+
+
 body {
     font-size: 100%;
     background-color: whitesmoke;
@@ -10,6 +12,24 @@ body {
     font-weight: 200;
     height: 75px;
 }
+
+.closeXDiv{
+    width: 40px;
+    height: 40px;
+    stroke-linecap: round;
+    stroke: white;
+    opacity: .6;
+    stroke-width: 5;
+    fill: none;
+    float: right;
+    padding: 16px;
+}
+
+.closeXDiv:hover{
+    opacity: 1;
+    stroke: white;
+}
+
 
 .projectName{
     color: darkgrey;
@@ -159,3 +179,74 @@ a:hover{
     margin: 2%;
 }
 
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .col {  margin: 1% 0 1% 0%; }
+    .span_1_of_3, .span_1_of_2 { width: 100%; }
+}
+
+
+
+
+.leftDiv{
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    float:left;
+}
+
+.left{
+    stroke-linecap: round;
+    stroke: darkgray;
+    stroke-width: 5;
+    fill: none;
+}
+
+.left:hover{
+    stroke :darkcyan;
+}
+.houseDiv{
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    position: absolute;
+    left: 40%;
+}
+
+.house{
+    stroke-linecap: round;
+    stroke: darkgray;
+    stroke-width: 5;
+    fill: none;
+}
+
+.house:hover{
+    stroke :darkcyan;
+}
+
+.rightDiv{
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    float:right;
+}
+
+.right{
+
+    stroke-linecap: round;
+    stroke: darkgray;
+    stroke-width: 5;
+    fill: none;
+
+}
+
+.right:hover{
+    stroke :darkcyan;
+}
+
+.iconsDiv{
+    width:50%;
+    height: 100px;
+    margin: auto;
+    position: relative;
+}
