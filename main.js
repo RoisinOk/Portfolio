@@ -5,17 +5,17 @@
 //var sizePortItems = portItem.style.width;
 //console.log(sizePortItems);
 
-var windowHeight = window.innerHeight;
-console.log(windowHeight);
-
-var titleDiv =  document.getElementById("titleDiv");
-var aboutDiv =  document.getElementById("aboutDiv");
-var portfolioDiv =  document.getElementById("portfolioDiv");
-var contactDiv =  document.getElementById("contactDiv");
-
-titleDiv.style.height = windowHeight + "px";
-aboutDiv.style.height = (windowHeight-70) + "px";
-contactDiv.style.height = (windowHeight-70) + "px";
+//var windowHeight = window.innerHeight;
+//console.log(windowHeight);
+//
+//var titleDiv =  document.getElementById("titleDiv");
+//var aboutDiv =  document.getElementById("aboutDiv");
+//var portfolioDiv =  document.getElementById("portfolioDiv");
+//var contactDiv =  document.getElementById("contactDiv");
+//
+//titleDiv.style.height = windowHeight + "px";
+//aboutDiv.style.height = (windowHeight-70) + "px";
+//contactDiv.style.height = (windowHeight-70) + "px";
 
 
 //================================================================================
@@ -134,11 +134,41 @@ function findOutY(){
 window.onscroll = function() {onScrollDown()};
 
 function onScrollDown() {
-    if (window.scrollY> 1500) {
+    if (window.scrollY> 2500) {
         animationContact.play();
-    }else if (window.scrollY> 700){
+    }else if (window.scrollY> 1000){
         animationPortfolio.play();
-    } else if (window.scrollY> 200) {
+    } else if (window.scrollY> 400) {
         animationAbout.play();
     }
 }
+
+
+//=============================================================
+
+
+(function() {
+    window.onload = function() {
+        var menu = document.getElementById('menu');
+        var init = menu.offsetTop;
+        var docked;
+
+        window.onscroll = function() {
+            if (!docked && (menu.offsetTop - scrollTop() < 0)) {
+                menu.style.top = 0;
+                menu.style.position = 'fixed';
+                menu.className = 'docked';
+                docked = true;
+            } else if (docked && scrollTop() <= init) {
+                menu.style.position = '';
+                menu.style.top = init + 'px';
+                menu.className = menu.className.replace('docked','');
+                docked = false;
+            }
+        };
+    };
+
+    function scrollTop() {
+        return document.body.scrollTop || document.documentElement.scrollTop;
+    }
+})();

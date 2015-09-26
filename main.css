@@ -1,5 +1,5 @@
 #titleDiv {
-    /*position: relative;*/
+    /*position: fixed;*/
     width:100%;
     height: 800px;
     background-color: whitesmoke;
@@ -8,6 +8,14 @@
     font-size: 3em;
     text-align: center;
 }
+
+p{
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    color: darkcyan;
+    font-size: 2em;
+}
+
 #aboutCircle {
     width: 200px;
     height: 120px;
@@ -20,13 +28,14 @@
     color: whitesmoke;
     text-align: center;
     font-family: 'Josefin Slab';
-
 }
+
 #aboutIcon {
     display: none;
-    width: 95%;
-    height: 95%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-left: 3px;
+    margin-top: 0px;
     /*padding: 20px;*/
     stroke: whitesmoke;
     stroke-width: 1;
@@ -55,10 +64,10 @@
 }
 
 #portfolioIcon{
-    width: 60%;
-    height: 80%;
-    margin-left: 20px;
-    margin-top: -15px;
+    width: 80%;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
     display: none;
     right: 20px;
     padding: 20px;
@@ -84,10 +93,10 @@
 }
 
 #contactIcon{
-    width: 80%;
-    height: 80%;
-    margin-left: 0px;
-    margin-top: -5%;
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+    margin-top: 0%;
     display: none;
     padding: 20px;
     stroke: whitesmoke;
@@ -100,36 +109,25 @@
 #aboutDiv{
     position: relative;
     width:100%;
-    height: 1200px;
+    height: 800px;
     background-color: darkCyan;
 }
 
 #portfolioDiv{
     position: relative;
     width:100%;
-    height: 1500px;
+    height: 1800px;
     background-color: whitesmoke;
 }
 
 #contactDiv{
     /*position: relative;*/
      width:100%;
-     height: 800px;
+     height: 600px;
      background-color: darkcyan;
  }
 
-/*#navBar {*/
-    /*position:fixed;*/
-    /*background-color: whitesmoke;*/
-    /*border: solid darkcyan;*/
-    /*width:100%;*/
-    /*text-align: center;*/
-    /*font-family: 'Josefin Slab', serif;*/
-    /*font-weight: bold;*/
-    /*font-size: 1.5em;*/
-    /*color: darkcyan;*/
-    /*z-index: 20;*/
-/*}*/
+
 
 .navLinkGroup {
     margin: auto;
@@ -162,7 +160,7 @@ color: whitesmoke;
 .col {
     display: block;
     float:left;
-    margin: 1% 0 1% 1.6%;
+
 }
 .col:first-child { margin-left: 0; }
 
@@ -171,14 +169,47 @@ color: whitesmoke;
 .group:after { content:""; display:table; }
 .group:after { clear:both;}
 .group { zoom:1; /* For IE 6/7 */ }
+
 /*  GRID OF THREE  */
-
-
 .span_1_of_3 {
-    width: 32.26%;
-    /*padding-bottom: 30%;*/
-    background-color: lightblue;
+    width: 30%;
+    margin: 3%;
 }
+
+.span_1_of_2 {
+    width: 48%;
+    margin: 2%;
+}
+
+.imgWrap {
+    position: relative;
+
+}
+
+.span_1_of_3:hover{
+    opacity: .3;
+}
+
+.imgDescription {
+    position: absolute;
+    top: 50px;
+    display: table-cell;
+    text-align: center;
+    /*background: rgba(29, 106, 154, 0.72);*/
+    color: darkcyan;
+    visibility: hidden;
+    opacity: 0;
+
+    /*remove comment if you want a gradual transition between states
+    -webkit-transition: visibility opacity 0.2s;
+    */
+}
+
+.imgWrap:hover .imgDescription {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
@@ -186,10 +217,29 @@ color: whitesmoke;
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
-.testPdf{
-    margin: auto;
+/*======================================================================*/
+
+/*======================================================================*/
+
+.wrap {
+    /* force the div to properly contain the floated images: */
+    position:relative;
+    /*float:left;*/
+    /*clear:none;*/
+    overflow:hidden;
+}
+.wrap img {
+    position:relative;
+    z-index:1;
+}
+.wrap .desc {
+    display:block;
+    position:absolute;
+    /*width:100%;*/
+    top:30%;
+    left:0;
+    z-index:2;
+    text-align:center;
 }
 
-.studChainPort {
-    border: solid crimson;
-}
+
