@@ -179,10 +179,16 @@ a:hover{
     margin: 2%;
 }
 
+.span_1_of_8 {
+    width: 11.62%;
+    margin: .4%;
+    background-color: aqua;
+}
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
     .col {  margin: 1% 0 1% 0%; }
-    .span_1_of_3, .span_1_of_2 { width: 100%; }
+    .span_1_of_3, .span_1_of_2, .span_1_of_8{ width: 100%; }
 }
 
 
