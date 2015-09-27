@@ -6,6 +6,7 @@ body {
 }
 
 .portfolioBanner{
+    width: 100%;
     background-color: darkcyan;
     color: whitesmoke;
     font-family: 'Josefin Slab', serif;
@@ -84,8 +85,12 @@ body {
 }
 
 .fullWidthImage{
+    display: block;
     margin: auto;
     width:100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: smaller;
+    color: darkgrey;
 }
 
 .brief{
@@ -133,6 +138,7 @@ h4{
 .portfolioContent{
     width: 70%;
     margin: auto;
+    display: block;
 }
 
 a {
@@ -152,6 +158,9 @@ a:hover{
     padding: 0px;
     margin: auto;
     width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: smaller;
+    color: darkgrey;
 }
 
 /*  COLUMN SETUP  */
@@ -188,16 +197,16 @@ a:hover{
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
     .col {  margin: 1% 0 1% 0%; }
-    .span_1_of_3, .span_1_of_2, .span_1_of_8{ width: 100%; }
+    .span_1_of_3, .span_1_of_2,{ width: 100%; }
 }
 
 
 
 
 .leftDiv{
-    width: 60px;
-    height: 60px;
-    padding: 16px;
+    width: 20%;
+    height: 20%;
+    padding: 10%;
     float:left;
 }
 
@@ -212,11 +221,11 @@ a:hover{
     stroke :darkcyan;
 }
 .houseDiv{
-    width: 60px;
-    height: 60px;
-    padding: 16px;
+    width: 20%;
+    height: 20%;
+    padding: 10%;
     position: absolute;
-    left: 40%;
+    left: 30%;
 }
 
 .house{
@@ -231,9 +240,9 @@ a:hover{
 }
 
 .rightDiv{
-    width: 60px;
-    height: 60px;
-    padding: 16px;
+    width: 20%;
+    height: 20%;
+    padding: 10%;
     float:right;
 }
 
@@ -254,5 +263,17 @@ a:hover{
     width:50%;
     height: 100px;
     margin: auto;
+    position: relative;
+}
+
+#playButton{
+    width:20%;
+    margin: auto;
+    display:block;
+}
+
+#playDiv{
+    width: 100%
+    background-color: red;
     position: relative;
 }
