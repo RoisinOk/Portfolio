@@ -97,7 +97,12 @@ body {
     background-color: white;
     width: 85%;
     margin: auto;
+}
 
+.userStories {
+    background-color: white;
+    width: 85%;
+    margin: auto;
 }
 
 .brief p{
@@ -107,6 +112,19 @@ body {
     border-radius: 2px;
 }
 
+.userStories p{
+    font-weight: 200;
+    /*text-align: left;*/
+    padding: 2%;
+    border-radius: 2px;
+}
+
+.userStories h5 {
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 0%;
+}
+
 p{
     margin: auto;
     font-family: 'Raleway', sans-serif;
@@ -114,7 +132,11 @@ p{
     line-height: 170%;
     text-align: left;
     padding-bottom: 2%;
+}
 
+p span {
+    font-weight: bold;
+    color: darkcyan;
 }
 
 
@@ -133,7 +155,11 @@ h4{
     font-size: 2em;
 }
 
-
+h5{
+    color: darkcyan;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
 
 
 a {
@@ -187,6 +213,16 @@ a:hover{
     width: 11.62%;
     margin: .4%;
     background-color: aqua;
+}
+
+.span_1_of_4 {
+    width: 23.8%;
+    margin: 1% 0 1% 1.6%;
+}
+
+.span_3_of_4 {
+    width: 74.6%;
+    margin: 1% 0 1% 1.6%;
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
@@ -275,4 +311,12 @@ a:hover{
     width: 100%
     background-color: red;
     position: relative;
+}
+
+#prototype{
+    margin: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
 }

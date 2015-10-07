@@ -18,6 +18,7 @@ p{
     font-size: 2em;
 }
 
+
 #aboutCircle {
     width: 200px;
     height: 120px;
@@ -182,6 +183,9 @@ color: whitesmoke;
     width: 48%;
     margin: 2%;
 }
+
+
+
 
 .imgWrap {
     position: relative;
