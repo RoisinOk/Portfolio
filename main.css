@@ -11,13 +11,62 @@
     /*text-align: center;*/
 /*}*/
 
-p{
-    text-align: center;
-    font-family: 'Josefin Slab', serif;
+#titleDiv{
     color: darkcyan;
-    font-size: 2em;
+    text-align: center;
+    margin:8%;
 }
 
+#hello{
+    font-size: 6em;
+    font-family: "Passion One", sans-serif;
+}
+
+#myNameIs{
+    font-family: 'Josefin Slab', serif;
+    font-size: 3.35em;
+}
+
+#roisin{
+    font-size: 10em;
+    font-family: "Passion One", sans-serif;
+}
+
+#andImA{
+    font-size: 2.3em;
+    font-family: 'Josefin Slab', serif;
+}
+
+#uxUi {
+    font-size: 3.8em;
+    font-family: "Passion One", sans-serif;
+}
+
+#and{
+    font-size: 3.9em;
+    font-family: "Passion One", sans-serif;
+}
+
+#andCoder {
+    font-family: 'Josefin Slab', serif;
+    font-size: 2.3em;
+}
+
+#designer{
+    font-family: 'Passion One', serif;
+    font-size: 3em;
+}
+
+
+/*.portSectionHeader {*/
+    /*color: darkcyan;*/
+    /*text-align: center;*/
+    /*/!*height: 600px;*!/*/
+    /*margin:8%;*/
+    /*font-family: 'Josefin Slab', serif;*/
+    /*color: darkcyan;*/
+    /*font-size: 2em;*/
+/*}*/
 
 #aboutCircle {
     width: 200px;
@@ -67,17 +116,19 @@ p{
 }
 
 #portfolioIcon{
-    width: 80%;
+    width: 65%;
     height: 100%;
     margin-left: 0px;
     margin-top: 0px;
     display: none;
-    right: 20px;
+    right: 22px;
+    top: 0px;
     padding: 20px;
     stroke:  darkcyan;
     stroke-width: 1;
     fill: none;
     stroke-linecap: round;
+    position: absolute;
     /*border: solid indianred;*/
 }
 
@@ -96,31 +147,38 @@ p{
 }
 
 #contactIcon{
-    width: 100%;
+    width: 65%;
     height: 100%;
     margin-left: -20px;
     margin-top: 0%;
+    right: 24px;
+    top: 0px;
     display: none;
     padding: 20px;
     stroke: whitesmoke;
     stroke-width: 1;
     fill: none;
     stroke-linecap: round;
+    position: absolute;
     /*border: solid indianred;*/
 }
 
 #aboutDiv{
     position: relative;
     width:100%;
-    height: 800px;
     background-color: darkCyan;
 }
 
 #portfolioDiv{
+    text-align: center;
     position: relative;
     width:100%;
-    height: 1800px;
     background-color: whitesmoke;
+    font-family: 'Josefin Slab', serif;
+    color: darkcyan;
+    font-size: 2em;
+    display: block;
+    margin: auto;
 }
 
 #contactDiv{
@@ -130,8 +188,17 @@ p{
      background-color: darkcyan;
  }
 
+#bigAbout{
+    color: whitesmoke;
+    font-family: "Passion One", sans-serif;
+    font-size: 10em;
+}
 
-
+#smallAbout{
+    color: whitesmoke;
+    font-family: "Josefin Slab", serif;
+    font-size: 1.5em;
+}
 .navLinkGroup {
     margin: auto;
     width: 70%;
@@ -180,17 +247,14 @@ color: whitesmoke;
 }
 
 .span_1_of_2 {
-    width: 48%;
-    margin: 2%;
+    width: 47%;
+    margin: 1% 0 1% 6%;
 }
 
+/*.imgWrap {*/
+    /*position: relative;*/
 
-
-
-.imgWrap {
-    position: relative;
-
-}
+/*}*/
 
 .span_1_of_3:hover{
     opacity: .3;
@@ -198,9 +262,18 @@ color: whitesmoke;
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
-    .col {  margin: 1% 0 1% 0%; }
+    .col {  margin: 6% 0 6% 0%; }
     .span_3_of_3, .span_1_of_2, .span_1_of_3 { width: 100%; }
+    #bigAbout {font-size: 4em;}
+    #roisin {font-size: 7em;}
+    /*#hello {font-size: 2.3em;}*/
+    #myNameIs {font-size: 2.3em;}
+    #andImA {font-size: 2.2em;}
+    #uxUi {font-size: 4em;}
+    #andCoder {font-size: 1.5em;}
+    #smallAbout{font-size: 1.2em}
 }
+
 
 
 

@@ -6,6 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,300,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,800,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Acme|Passion+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../main.css">
     <script src='../external/jquery.js'></script>
     <script src='../external/TweenMax.js'></script>
@@ -22,11 +23,12 @@
         <!--</ul>-->
     <!--</div>-->
     <div id="titleDiv">
-        <h1>Hello</h1>
-        <h5>my name is</h5>
-        <h1>Róisín</h1>
-        <h5>and I'm a</h5>
-        <h3>Designer & Coder</h3>
+        <!--<span id="hello">HI</span><br>-->
+        <span id="myNameIs">Hello, my name is</span><br><br>
+        <span id="roisin">RÓISÍN</span><br>
+        <span id="andImA">and I'm a</span><br><br>
+        <span id="uxUi">UX & UI DESIGNER</span><br><br>
+        <span id="andCoder">(I do a little bit of code too)</span><br>
     </div>
 
     <div id="aboutDiv">
@@ -39,8 +41,21 @@
                 <path id="headOutline" d="M64.35 37.18C64.05 36.8 63.77 36.41 63.49 36.01 62.9 35.2 62.28 34.41 61.74 33.56 61.19 32.72 60.68 31.86 60.23 30.96 59.76 30 59.73 28.96 59.96 27.92 60.16 26.99 60.35 26.06 60.48 25.12 60.63 24.04 60.61 22.95 60.4 21.88 60.15 20.58 59.86 19.29 59.57 18 59.32 16.85 58.96 15.74 58.56 14.64 58.24 13.74 57.86 12.87 57.36 12.06 56.95 11.4 56.46 10.79 55.97 10.18 55.6 9.72 55.2 9.28 54.79 8.86 54.56 8.61 54.29 8.4 54.03 8.18 53.81 7.98 53.58 7.79 53.35 7.6 53.05 7.37 52.76 7.12 52.45 6.9 52 6.58 51.55 6.24 51.06 5.97 49.97 5.37 48.87 4.75 47.74 4.23 46.93 3.85 46.06 3.56 45.2 3.31 43.73 2.88 42.26 2.43 40.76 2.13 38.72 1.72 36.67 1.36 34.59 1.18 32.18 0.96 29.77 0.93 27.37 1.15 25.93 1.28 24.49 1.53 23.1 1.99 22.49 2.19 21.86 2.35 21.27 2.6 20.69 2.84 20.14 3.15 19.61 3.46 18.98 3.83 18.38 4.23 17.79 4.64 17.48 4.85 17.21 5.1 16.93 5.34 16.46 5.76 15.99 6.19 15.53 6.62 15.31 6.83 15.1 7.05 14.89 7.27 14.6 7.6 14.3 7.92 14.02 8.26 13.59 8.81 13.18 9.38 12.76 9.94 12.47 10.34 12.2 10.75 11.93 11.17 11.76 11.43 11.58 11.69 11.44 11.97 10.87 13.1 10.23 14.22 9.78 15.4 9.14 17.12 7.51 19.49 7.76 26.27 8 33.05 4.28 33.56 5.32 42.6 6.35 51.64 2.79 53.12 1.81 55.28 -0.18 59.69 2.16 67.42 1.81 68.13 1.49 68.8 10.58 68.08 10.58 68.13L40.09 68.13C40.32 66.89 40.54 65.64 40.78 64.4 40.96 63.44 41.32 62.53 41.83 61.69 42.21 61.08 42.57 60.45 43.03 59.91 43.48 59.38 44.03 58.91 44.58 58.46 44.9 58.19 45.34 58.14 45.77 58.12 47.53 58.06 49.28 58.23 51.02 58.47 52.59 58.68 54.18 58.77 55.76 58.64 56.89 58.55 57.83 58.05 58.5 57.12 59.32 55.98 59.55 54.71 59.47 53.35 59.45 52.93 59.46 52.51 59.52 52.1 59.58 51.63 59.94 51.31 60.28 51.06 60.98 50.53 61.38 49.88 61.41 49.02 61.43 48.42 61.16 47.91 60.75 47.5 61.12 47.13 61.49 46.76 61.88 46.4 62.42 45.89 62.56 45 62.24 44.35 61.98 43.8 61.82 43.22 61.92 42.6 61.98 42.23 62.17 41.98 62.57 41.86 63.33 41.64 64.02 41.3 64.64 40.81 65.25 40.33 65.51 39.5 65.3 38.76 65.12 38.15 64.74 37.67 64.35 37.18Z" />
             </svg>
         </div>
-        <p id="aboutMyself">ABOUT MYSELF</p>
-        <p >ABOUT MYSELF</p>
+        <div class="section group">
+            <div id="bigAbout"class="col span_1_of_2">ABOUT ME.
+            </div>
+            <div id="smallAbout" class="col span_1_of_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tristique ex quis
+                sapien varius eleifend. In hac habitasse platea dictumst. Nullam odio lorem, dictum ac est et, euismod vehicula
+                felis. Vestibulum magna arcu, efficitur at lacinia eget, fringilla a diam. Sed at nulla egestas, tristique nisi
+                at, ornare risus. Nam augue tortor, venenatis vel venenatis eu, pulvinar et mi. Proin eu pretium turpis. Nam quis
+                lacus elit.<br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tristique ex quis
+                sapien varius eleifend. In hac habitasse platea dictumst. Nullam odio lorem, dictum ac est et, euismod vehicula
+                felis. Vestibulum magna arcu, efficitur at lacinia eget, fringilla a diam. Sed at nulla egestas, tristique nisi
+                at, ornare risus. Nam augue tortor, venenatis vel venenatis eu, pulvinar et mi. Proin eu pretium turpis. Nam quis
+                lacus elit.
+            </div>
+        </div>
     </div>
 
     <div id="portfolioDiv">
@@ -77,7 +92,9 @@
                 </g>
             </svg>
         </div>
-        <p>Visual Design Portfolio</p>
+        <span>Visual Design Portfolio</span>
+        <br>
+        <br>
 
         <div class="section group">
             <a href="studdedChain.html" id="studChainPort">
@@ -98,9 +115,9 @@
         </div>
 
         <div class="section group">
-            <a href="moodBoard.html" id="moodBoardPort">
-                <img border="0" alt="W3Schools" src="../images/moodBoardSquare.png" class="col span_1_of_3">
-            </a>
+            <!--<a href="moodBoard.html" id="moodBoardPort">-->
+                <!--<img border="0" alt="W3Schools" src="../images/moodBoardSquare.png" class="col span_1_of_3">-->
+            <!--</a>-->
             <a href="solus.html" id="forestPort">
                 <img border="0" alt="W3Schools" src="../images/forest.png" class="col span_1_of_3">
             </a>
@@ -108,7 +125,9 @@
                 <img border="0" alt="W3Schools" src="../images/ruzoLogo.png" class="col span_1_of_3">
             </a>
         </div>
-        <p>Interaction (UX) Design </p>
+        <br>
+        <div class="portSectionHeader">Interaction (UX) Design</div>
+        <br>
         <div class="section group">
             <a href="dublinCityReport.html" id="dublinPort">
                 <img border="0" alt="W3Schools" src="../images/dublinCity.png" class="col span_1_of_3">
@@ -117,10 +136,12 @@
                 <img border="0" alt="W3Schools" src="../images/paulSquare.png" class="col span_1_of_3">
             </a>
             <a href="boojumProject.html" id="boojumPort">
-                <img border="0" alt="W3Schools" src="../images/boojumProblem.png" class="col span_1_of_3">
+                <img border="0" alt="W3Schools" src="../images/boojumSquare.jpg" class="col span_1_of_3">
             </a>
         </div>
-        <p>Coding Projects </p>
+        <br>
+        <div class="portSectionHeader">Coding Projects</div>
+        <br>
         <div class="section group">
             <a href="grangeMobile.html" >
                 <img border="0" alt="W3Schools" src="../images/boojumProblem.png" class="col span_1_of_3">
