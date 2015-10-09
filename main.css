@@ -1,5 +1,6 @@
 .body{
     background-color: whitesmoke;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.2) 35px, rgba(255,255,255,.2) 70px);
 }
 
 /*#titleDiv {*/
@@ -11,24 +12,79 @@
     /*text-align: center;*/
 /*}*/
 
+#decoMiddle {
+    width: 213px;
+    height: 36px;
+    fill: none;
+    stroke: #008C8C;
+}
+
+#penLeft{
+    width: 103px;
+    height: 65px;
+    fill: none;
+    stroke: #008C8C;
+    position: absolute;
+    left: 10%;
+    stroke-width: 2.5;
+    top: 256px;
+}
+
+#penRight{
+    width: 103px;
+    height: 65px;
+    fill: none;
+    stroke: #008C8C;
+    position: absolute;
+    right: 10%;
+    stroke-width: 2.5;
+    top: 256px;
+}
+#decoLeft{
+    fill: none;
+    width:126px;
+    height: 18px;
+    stroke: #008C8C;
+    position: absolute;
+    left: 25%;
+    stroke-width: 2.5;
+    top: 280px;
+}
+
+#decoRight{
+    fill: none;
+    width:126px;
+    height: 18px;
+    stroke: #008C8C;
+    position: absolute;
+    right: 25%;
+    stroke-width: 2.5;
+    top: 280px;
+}
+
+
+
 #titleDiv{
     color: darkcyan;
     text-align: center;
-    margin:8%;
+    /*margin:8%;*/
+    padding-bottom: 160px;
+    padding-top: 60px;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.2) 35px, rgba(255,255,255,.2) 70px);
 }
 
 #hello{
-    font-size: 6em;
+    font-size: 5em;
     font-family: "Passion One", sans-serif;
 }
 
 #myNameIs{
     font-family: 'Josefin Slab', serif;
-    font-size: 3.35em;
+    font-size: 2.6em;
 }
 
 #roisin{
-    font-size: 10em;
+    font-size: 8em;
     font-family: "Passion One", sans-serif;
 }
 
@@ -37,24 +93,25 @@
     font-family: 'Josefin Slab', serif;
 }
 
-#uxUi {
-    font-size: 3.8em;
+.uxUi {
+    font-size: 3em;
     font-family: "Passion One", sans-serif;
+}
+
+
+#designer{
+    font-family: 'Passion One', serif;
+    font-size: 6em;
 }
 
 #and{
     font-size: 3.9em;
-    font-family: "Passion One", sans-serif;
+    font-family: 'Josefin Slab', serif;
 }
 
 #andCoder {
     font-family: 'Josefin Slab', serif;
-    font-size: 2.3em;
-}
-
-#designer{
-    font-family: 'Passion One', serif;
-    font-size: 3em;
+    font-size: 1.8em;
 }
 
 
@@ -167,6 +224,7 @@
     position: relative;
     width:100%;
     background-color: darkCyan;
+    padding-bottom: 10%;
 }
 
 #portfolioDiv{
@@ -179,6 +237,7 @@
     font-size: 2em;
     display: block;
     margin: auto;
+    padding-bottom: 10%;
 }
 
 #contactDiv{
@@ -186,18 +245,20 @@
      width:100%;
      height: 600px;
      background-color: darkcyan;
+    padding-bottom: 10%;
  }
 
 #bigAbout{
     color: whitesmoke;
     font-family: "Passion One", sans-serif;
-    font-size: 10em;
+    font-size: 6em;
+    margin-top: 0px;
 }
 
 #smallAbout{
     color: whitesmoke;
     font-family: "Josefin Slab", serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .navLinkGroup {
     margin: auto;
@@ -260,10 +321,32 @@ color: whitesmoke;
     opacity: .3;
 }
 
+.span_3_of_4 {
+    width: 74.6%;
+}
+
+.span_1_of_4 {
+    width: 23.8%;
+}
+
+.span_3_of_3b {
+    width: 100%;
+    margin: 1% 0 1% 7%;
+
+}
+.span_2_of_3b {
+    width: 64.33%;
+    margin: 1% 0 1% 7%;
+}
+.span_1_of_3b {
+    width: 28.66%;
+    margin: 1% 0 1% 7%;
+}
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
     .col {  margin: 6% 0 6% 0%; }
-    .span_3_of_3, .span_1_of_2, .span_1_of_3 { width: 100%; }
+    .span_3_of_3, .span_1_of_2, .span_1_of_3, .span_1_of_3b, .span_2_of_3b  { width: 100%; }
     #bigAbout {font-size: 4em;}
     #roisin {font-size: 7em;}
     /*#hello {font-size: 2.3em;}*/
@@ -272,8 +355,25 @@ color: whitesmoke;
     #uxUi {font-size: 4em;}
     #andCoder {font-size: 1.5em;}
     #smallAbout{font-size: 1.2em}
+    #decoLeft{display: none}
+    #decoRight{display: none}
+    #penLeft{display: none}
+    #penRight{display: none}
+}
+
+/*  FOR TABLETS */
+@media only screen and (max-width: 1020px) {
+    .section {width: 90%}
+    #bigAbout {font-size: 5em;}
+    #decoLeft{left: 18%}
+    #decoRight{right: 18%}
+    #penLeft{left: 5%}
+    #penRight{right: 5%}
+
 }
 
 
 
-
+.diaStripes1{
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.2) 35px, rgba(255,255,255,.2) 70px);
+}

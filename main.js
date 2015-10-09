@@ -102,6 +102,168 @@ for(var i=0; i < pathsPlane.length; i++){                               //loop t
 
 contactIcon.style.display = "block";
 //animationContact.play();
+
+//================================================================================
+//CODE TO ANIMATE PENLEFT ICON
+//================================================================================
+
+
+var penLeft = document.getElementById("penLeft");
+
+var animationpenLeft = new TimelineMax({repeat:0});           //Declare a new timeline
+animationpenLeft.pause();                                     //Pause it at the beginning
+
+var pathsPenLeft = penLeft.getElementsByTagName("path");    //Gets all of the paths that make up portfolioIcon and put them into an array
+
+for(var i=0; i < pathsPenLeft.length; i++){                               //loop through all paths that make up portfolioIcon, and for each:
+    var pathsPenLeft = pathsPenLeft[i];                                      //select the path
+    var pathLength = pathsPenLeft.getTotalLength();                        //Find out how long it is
+    pathsPenLeft.style.strokeDasharray = pathLength +" "+ pathLength;      //Apply this to the stroke dask size (Makes the dash the length of the whole path)
+    pathsPenLeft.style.strokeDashoffset = pathLength;                      //and also the stroke dash offset. (Moves the dash to hide the path)
+    if(i>0){
+        console.log("i is greater than 0");
+        animationpenLeft.to(pathsPenLeft.style, 2, {strokeDashoffset: 0}, "-=2");
+    }else {
+        console.log("i is not greater than 0");
+        animationpenLeft.to(pathsPenLeft.style, 2, {strokeDashoffset: 0});
+    }
+}//end of for loop
+
+if(window.innerWidth > 480) {
+    penLeft.style.display = "block";
+    animationpenLeft.play();
+}else{
+    penLeft.style.display = "none";
+}
+
+//================================================================================
+//CODE TO ANIMATE PENRIGHT ICON
+//================================================================================
+
+
+var penRight = document.getElementById("penRight");
+
+var animationpenRight = new TimelineMax({repeat:0});           //Declare a new timeline
+animationpenRight.pause();                                     //Pause it at the beginning
+
+var pathsPenRight = penRight.getElementsByTagName("path");    //Gets all of the paths that make up portfolioIcon and put them into an array
+
+for(var i=0; i < pathsPenRight.length; i++){                               //loop through all paths that make up portfolioIcon, and for each:
+    var pathsPenRight = pathsPenRight[i];                                      //select the path
+    var pathLength = pathsPenRight.getTotalLength();                        //Find out how long it is
+    pathsPenRight.style.strokeDasharray = pathLength +" "+ pathLength;      //Apply this to the stroke dask size (Makes the dash the length of the whole path)
+    pathsPenRight.style.strokeDashoffset = pathLength;                      //and also the stroke dash offset. (Moves the dash to hide the path)
+    if(i>0){
+        console.log("i is greater than 0");
+        animationpenRight.to(pathsPenRight.style, 2, {strokeDashoffset: 0}, "-=2");
+    }else {
+        console.log("i is not greater than 0");
+        animationpenRight.to(pathsPenRight.style, 2, {strokeDashoffset: 0});
+    }
+}//end of for loop
+if(window.innerWidth > 480){
+    penRight.style.display = "block";
+    animationpenRight.play();
+}else{
+    penRight.style.display = "none";
+}
+
+//================================================================================
+//CODE TO ANIMATE DECORIGHT ICON
+//================================================================================
+
+
+var decoRight = document.getElementById("decoRight");
+
+var animationDecoRight = new TimelineMax({repeat:0});           //Declare a new timeline
+animationDecoRight.pause();                                     //Pause it at the beginning
+
+var pathsDecoRight = decoRight.getElementsByTagName("path");    //Gets all of the paths that make up portfolioIcon and put them into an array
+
+for(var i=0; i < pathsDecoRight.length; i++){                               //loop through all paths that make up portfolioIcon, and for each:
+    var pathDecoRight = pathsDecoRight[i];                                      //select the path
+    var pathLength = pathDecoRight.getTotalLength();                        //Find out how long it is
+    pathDecoRight.style.strokeDasharray = pathLength +" "+ pathLength;      //Apply this to the stroke dask size (Makes the dash the length of the whole path)
+    pathDecoRight.style.strokeDashoffset = pathLength;                      //and also the stroke dash offset. (Moves the dash to hide the path)
+    if(i>0){
+        console.log("i is greater than 0");
+        animationDecoRight.to(pathDecoRight.style, 2, {strokeDashoffset: 0}, "-=2");
+    }else {
+        console.log("i is not greater than 0");
+        animationDecoRight.to(pathDecoRight.style, 2, {strokeDashoffset: 0});
+    }
+}//end of for loop
+if(window.innerWidth > 480){
+    decoRight.style.display = "block";
+    animationDecoRight.play();
+}else{
+    decoRight.style.display = "none";
+}
+
+//================================================================================
+//CODE TO ANIMATE DECOLEFT ICON
+//================================================================================
+
+
+var decoLeft = document.getElementById("decoLeft");
+
+var animationDecoLeft = new TimelineMax({repeat:0});           //Declare a new timeline
+animationDecoLeft.pause();                                     //Pause it at the beginning
+
+var pathsDecoLeft = decoLeft.getElementsByTagName("path");    //Gets all of the paths that make up portfolioIcon and put them into an array
+
+for(var i=0; i < pathsDecoLeft.length; i++){                               //loop through all paths that make up portfolioIcon, and for each:
+    var pathDecoLeft = pathsDecoLeft[i];                                      //select the path
+    var pathLength = pathDecoLeft.getTotalLength();                        //Find out how long it is
+    pathDecoLeft.style.strokeDasharray = pathLength +" "+ pathLength;      //Apply this to the stroke dask size (Makes the dash the length of the whole path)
+    pathDecoLeft.style.strokeDashoffset = pathLength;                      //and also the stroke dash offset. (Moves the dash to hide the path)
+    if(i>0){
+        console.log("i is greater than 0");
+        animationDecoLeft.to(pathDecoLeft.style, 2, {strokeDashoffset: 0}, "-=2");
+    }else {
+        console.log("i is not greater than 0");
+        animationDecoLeft.to(pathDecoLeft.style, 2, {strokeDashoffset: 0});
+    }
+}//end of for loop
+if(window.innerWidth > 480){
+    decoLeft.style.display = "block";
+    animationDecoLeft.play();
+}else{
+    decoLeft.style.display = "none";
+}
+
+
+//================================================================================
+//CODE TO ANIMATE DECOMIDDLE ICON
+//================================================================================
+
+var decoMiddleIcon = document.getElementById("decoMiddle");
+var animationDecoMiddle = new TimelineMax({repeat:0});
+animationDecoMiddle.pause();
+
+var svgPathsDM = decoMiddleIcon.getElementsByTagName("path");
+
+for (var x = 0; x < svgPathsDM.length; x++) {
+    //select a path
+    var pathDecoMiddle = svgPathsDM[x];
+    //get the pixel length of the SVG path
+    var pathDimensionsDM = pathDecoMiddle.getTotalLength();
+    // apply styles to stroke-dasharray and stroke-dashoffset
+    pathDecoMiddle.style.strokeDasharray = pathDimensionsDM + " " + pathDimensionsDM;
+    pathDecoMiddle.style.strokeDashoffset = pathDimensionsDM;
+    if(x>0){
+        console.log("x is greater than 0");
+        animationDecoMiddle .to(pathDecoMiddle.style, 2, {strokeDashoffset: 0}, "-=2");
+    }else {
+        console.log("x is not greater than 0");
+        animationDecoMiddle .to(pathDecoMiddle.style, 2, {strokeDashoffset: 0});
+    }
+}
+
+decoMiddleIcon.style.display = "block";
+decoMiddleIcon.style.margin = "auto";
+animationDecoMiddle.play();
+
 //================================================================================
 //ON-CLICK FUNCTIONS FOR BUTTONS
 //================================================================================
@@ -144,31 +306,31 @@ function onScrollDown() {
 }
 
 
-//=============================================================
-
-
-(function() {
-    window.onload = function() {
-        var menu = document.getElementById('menu');
-        var init = menu.offsetTop;
-        var docked;
-
-        window.onscroll = function() {
-            if (!docked && (menu.offsetTop - scrollTop() < 0)) {
-                menu.style.top = 0;
-                menu.style.position = 'fixed';
-                menu.className = 'docked';
-                docked = true;
-            } else if (docked && scrollTop() <= init) {
-                menu.style.position = '';
-                menu.style.top = init + 'px';
-                menu.className = menu.className.replace('docked','');
-                docked = false;
-            }
-        };
-    };
-
-    function scrollTop() {
-        return document.body.scrollTop || document.documentElement.scrollTop;
-    }
-})();
+////=============================================================
+//
+//
+//(function() {
+//    window.onload = function() {
+//        var menu = document.getElementById('menu');
+//        var init = menu.offsetTop;
+//        var docked;
+//
+//        window.onscroll = function() {
+//            if (!docked && (menu.offsetTop - scrollTop() < 0)) {
+//                menu.style.top = 0;
+//                menu.style.position = 'fixed';
+//                menu.className = 'docked';
+//                docked = true;
+//            } else if (docked && scrollTop() <= init) {
+//                menu.style.position = '';
+//                menu.style.top = init + 'px';
+//                menu.className = menu.className.replace('docked','');
+//                docked = false;
+//            }
+//        };
+//    };
+//
+//    function scrollTop() {
+//        return document.body.scrollTop || document.documentElement.scrollTop;
+//    }
+//})();
