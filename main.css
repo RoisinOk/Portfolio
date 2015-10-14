@@ -255,10 +255,20 @@
     margin-top: 0px;
 }
 
+#contactMeText {
+    color: whitesmoke;
+    font-family: "Josefin Slab", sans-serif;
+    font-size: 2em;
+    margin-top: 0px;
+    text-align: center;
+}
+
 #smallAbout{
     color: whitesmoke;
     font-family: "Josefin Slab", serif;
     font-size: 1.2em;
+    line-height: 1.7;
+    margin-top: 0px;
 }
 .navLinkGroup {
     margin: auto;
