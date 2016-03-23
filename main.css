@@ -259,8 +259,17 @@
     color: whitesmoke;
     font-family: "Josefin Slab", sans-serif;
     font-size: 2em;
-    margin-top: 0px;
     text-align: center;
+    display: block;
+    margin:auto;
+}
+
+#aboutText{
+    color: whitesmoke;
+    font-family: "Josefin Slab", serif;
+    font-size: 1.2em;
+    line-height: 1.7;
+
 }
 
 #smallAbout{
@@ -270,10 +279,19 @@
     line-height: 1.7;
     margin-top: 0px;
 }
+
+#contactMessage{
+    color: whitesmoke;
+    font-family: "Josefin Slab", serif;
+    font-size: 1.2em;
+    line-height: 1.7;
+    text-align: center;
+    margin: auto;
+}
+
 .navLinkGroup {
     margin: auto;
     width: 70%;
-
 }
 
 .navLink {
